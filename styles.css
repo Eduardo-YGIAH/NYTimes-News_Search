@@ -57,8 +57,7 @@ input {
 }
 
 .button {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
 	font-size: 16px;
 	padding: 20px 30px;
 	border-radius: 6px;
@@ -93,4 +92,13 @@ input {
 
 .thumbnail {
 	border-radius: 3px;
+}
+
+.pub_date {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 11px;
+	font-weight: 300;
+	color: rgb(29, 27, 27);
+	margin-top: 10px;
+	margin-bottom: 15px;
 }

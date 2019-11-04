@@ -81,11 +81,13 @@ form.addEventListener('submit', e => {
 				const articleContainer = document.createElement('div');
 				const articleHeading = document.createElement('h2');
 				const articleSnipet = document.createElement('p');
-
+				const pubDate = document.createElement('p');
 				const articleThumbnail = document.createElement('img');
 
 				articleHeading.textContent = el.headline.main;
 				articleSnipet.textContent = el.snippet;
+				pubDate.textContent =
+					'Published on: ' + el.pub_date.substr(0, 10);
 
 				linkTo.setAttribute('href', el.web_url);
 
@@ -95,6 +97,7 @@ form.addEventListener('submit', e => {
 				article.classList.add('article');
 				articleContainer.classList.add('article_container');
 				articleThumbnail.classList.add('thumbnail');
+				pubDate.classList.add('pub_date');
 
 				if (el.multimedia[19]) {
 					articleThumbnail.setAttribute(
@@ -104,6 +107,7 @@ form.addEventListener('submit', e => {
 					articleContainer.appendChild(articleThumbnail);
 				}
 				articleContainer.appendChild(articleHeading);
+				articleContainer.appendChild(pubDate);
 				articleContainer.appendChild(articleSnipet);
 
 				linkTo.appendChild(articleContainer);
