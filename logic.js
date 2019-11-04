@@ -57,9 +57,10 @@ form.addEventListener('submit', e => {
 		beginDate +
 		endDate +
 		numRecords +
+		'&fq=source:("The New York Times")' +
 		'&q=' +
 		searchTerm +
-		'&sort=newest' +
+		'&sort=relevance' +
 		'&api-key=R1a31F4tBjCUaM2ho8GtIFsrSdtXt30M';
 
 	let fragment = document.createDocumentFragment();
