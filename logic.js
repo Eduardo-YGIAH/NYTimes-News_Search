@@ -8,7 +8,6 @@ let buttons = form.querySelectorAll('.button');
 
 let beginDate = '';
 let endDate = '';
-let numRecords = `&page=${numRecordsInput.value}`;
 
 startYear.addEventListener('keyup', e => {
 	if (!/^(19|20)\d\d$/.test(startYear.value)) {
@@ -56,19 +55,21 @@ form.addEventListener('submit', e => {
 		'https://api.nytimes.com/svc/search/v2/articlesearch.json?' +
 		beginDate +
 		endDate +
-		numRecords +
 		'&fq=source:("The New York Times")' +
 		'&q=' +
 		searchTerm +
 		'&sort=relevance' +
 		'&api-key=R1a31F4tBjCUaM2ho8GtIFsrSdtXt30M';
 
+	console.log(queryUrl);
+
 	let fragment = document.createDocumentFragment();
 
 	fetch(queryUrl)
 		.then(response => response.json())
 		.then(data => {
-			const dataArray = data.response.docs;
+			let dataArray = data.response.docs;
+			let dataRemainder = dataArray.splice(numRecordsInput.value);
 			console.log(dataArray);
 
 			dataArray.forEach(el => {
