@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	margin: 0 auto;
+	padding: 40px 0;
+	background: rgb(9, 9, 51);
+	border-radius: 6px;
+	width: 70%;
+	color: white;
+}
+
+.container {
+	width: 70%;
+	margin: 20px auto;
+	border-radius: 6px;
+	border: 1px solid black;
+}
+
+.heading {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 16px;
+	background: rgb(36, 35, 35);
+	color: white;
+	padding: 10px 10px;
+}
+
+.sub_container {
+	padding: 10px;
+}
+
+label {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+#start_year:focus {
+	outline: none;
+}
+
+#end_year:focus {
+	outline: none;
+}
+
+.button {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 16px;
+	padding: 20px 30px;
+	border-radius: 6px;
+	color: white;
+	margin: 5px 0;
+	margin-right: 10px;
+}
+
+.active {
+	background: rgb(9, 9, 51);
+	cursor: pointer;
+}
+
+.inactive {
+	cursor: none;
+	background: lightgray;
+}
+
+.article {
+	list-style: none;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.article_container {
+	padding: 10px;
+	border: 1px solid darkgray;
+	border-radius: 3px;
+	box-shadow: 0 0 3px;
+	overflow: hidden;
+}
+
+.thumbnail {
+	border-radius: 3px;
+}
