@@ -72,7 +72,7 @@ input {
 }
 
 .inactive {
-	cursor: none;
+	cursor: not-allowed;
 	background: lightgray;
 }
 

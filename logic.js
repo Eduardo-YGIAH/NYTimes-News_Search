@@ -5,6 +5,8 @@ let numRecordsInput = form.querySelector('#num_records');
 let searchTermInput = form.querySelector('#search_term');
 let searchTerm = '';
 let buttons = form.querySelectorAll('.button');
+buttons[0].disabled = true;
+buttons[1].disabled = true;
 
 let beginDate = '';
 let endDate = '';
